@@ -1,6 +1,6 @@
 /* work sans font from google font */
 
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -9,4 +9,96 @@
 
 body {
   font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  padding: 0 240px 50px 240px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header section styles */
+
+header {
+  background: rgba(255, 144, 14, 0.1);
+}
+
+/* nav styles */
+nav {
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-title {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+nav li a {
+  color: #424242;
+}
+
+/* banner styles */
+
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.banner-content h2 {
+  color: #131313;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.banner-content p {
+  margin-bottom: 30px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* responsive media quary */
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* tablet & medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .container {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
